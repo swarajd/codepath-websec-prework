@@ -41,19 +41,21 @@ if ($valid_subtotal) {
     echo('<p class="good res">');
     echo('Tip: $' . $_POST['subtotal'] * $_POST['percentage']/100 . '<br/>');
     echo('Total: $' . $_POST['subtotal'] * ($_POST['percentage']/100 + 1));
-} else {
+    echo("</p>");
+} else if ($posted) {
     echo('<p class="bad res">');
-    if (!$perc_set && !$subtotal_set && $posted) {
+    if (!$perc_set && !$subtotal_set) {
         echo('neither percentage nor subtotal was set');
-    } else if (!$perc_set && $posted) {
+    } else if (!$perc_set) {
         echo('the percentage was not set');
-    } else if (!$subtotal_set && $posted) {
+    } else if (!$subtotal_set) {
         echo('the subtotal was not set');
     } else {
         echo('the subtotal was not formatted correctly');
     }
+    echo("</p>");
 }
-echo("</p>");
+
 
 
 
