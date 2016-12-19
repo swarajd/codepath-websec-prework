@@ -1,0 +1,28 @@
+body {
+    background: #fdffc3;
+}
+
+form {
+    padding: 5px;
+    background: #fff;
+    border: 1px solid #000;
+    width: 300px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.good {
+    color: #307EE2; 
+    border: 1px solid #307EE2; 
+}
+
+.bad {
+    color: #7E6356;
+    border: 1px solid #7E6356;
+}
+
+.res {
+    padding: 5px;
+}
