@@ -11,7 +11,7 @@
     Bill subtotal: $<input 
         type="text" 
         name ="subtotal" 
-        value="<?php echo(isset($_POST['subtotal']) ? $_POST['subtotal'] : '') ?>"><br>
+        value="<?php echo(isset($_POST['subtotal']) ? htmlspecialchars($_POST['subtotal']) : '') ?>"><br>
     Tip percentage:
      <?php 
 
